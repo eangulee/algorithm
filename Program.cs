@@ -8,31 +8,21 @@ namespace algorithm
     {
         static void Main(string[] args)
         {
-            int length = 10000;
+            int length = 100;
             int[] original = GetRandomArray(length);
             //冒泡排序
-            bubbleSort(original, length);
+            //bubbleSort(original, length);
+
+            //选择排序
+            selectSort(original, length);
 
             //快速排序
-            quickSort(original, length);
+            //quickSort(original, length);
 
             Console.ReadLine();
         }
 
-        public static void quickSort(int[] original, int length)
-        {
-            Stopwatch sw = new Stopwatch();
-            //快速排序
-            int[] array = new int[length];
-            Array.Copy(original, array, length);
-
-            sw.Restart();
-            QuickSort.Sort(array);
-            sw.Stop();
-            Console.WriteLine($"快速排序{length}条数据耗时：{sw.ElapsedMilliseconds}毫秒");
-            WriteArray(array);
-        }
-
+        //冒泡排序
         public static void bubbleSort(int[] original, int length)
         {
             Stopwatch sw = new Stopwatch();
@@ -60,6 +50,34 @@ namespace algorithm
             BubbleSort.SortOptimized2(array);
             sw.Stop();
             Console.WriteLine($"冒泡优化2排序{length}条数据耗时：{sw.ElapsedMilliseconds}毫秒");
+            WriteArray(array);
+        }
+
+        //选择排序
+        public static void selectSort(int[] original, int length)
+        {
+            Stopwatch sw = new Stopwatch();
+            int[] array = new int[length];
+            Array.Copy(original, array, length);
+
+            sw.Restart();
+            SelectSort.Sort(array);
+            sw.Stop();
+            Console.WriteLine($"选择排序{length}条数据耗时：{sw.ElapsedMilliseconds}毫秒");
+            WriteArray(array);
+        }
+
+        //快速排序
+        public static void quickSort(int[] original, int length)
+        {
+            Stopwatch sw = new Stopwatch();
+            int[] array = new int[length];
+            Array.Copy(original, array, length);
+
+            sw.Restart();
+            QuickSort.Sort(array);
+            sw.Stop();
+            Console.WriteLine($"快速排序{length}条数据耗时：{sw.ElapsedMilliseconds}毫秒");
             WriteArray(array);
         }
 
