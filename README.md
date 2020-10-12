@@ -9,7 +9,6 @@ Algorithm with C#
 
 ![image](https://github.com/eangulee/algorithm/blob/main/imgs/O.png)
 
-
 1.冒泡排序（两种优化的冒泡排序）
 
 ![image](https://github.com/eangulee/algorithm/blob/main/imgs/bubble.gif)
@@ -20,7 +19,7 @@ Algorithm with C#
 
 3.插入排序
 
-![image](https://github.com/eangulee/algorithm/blob/main/imgs/insert.gif)
+![image](https://github.com/eangulee/algorithm/blob/main/imgs/insertion.gif)
 
 4.希尔排序
 
