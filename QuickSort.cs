@@ -10,7 +10,7 @@ namespace algorithm
     public class QuickSort
     {
         /// <summary>
-        /// 快速排序，算法的时间复杂度为O(nlogn)
+        /// 快速排序，算法的时间复杂度为O(nlogn)，算法不稳定
         /// 挖坑法+分治算法
         /// </summary>
         /// <param name="arr"></param>

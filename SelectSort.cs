@@ -10,7 +10,7 @@ namespace algorithm
     public class SelectSort
     {
         /// <summary>
-        /// 选择排序，算法的时间复杂度为O(n^2)
+        /// 选择排序，算法的时间复杂度为O(n^2)，算法不稳定
         /// </summary>
         /// <param name="arr"></param>
         public static void Sort(int[] arr)

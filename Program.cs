@@ -14,7 +14,13 @@ namespace algorithm
             //bubbleSort(original, length);
 
             //选择排序
-            selectSort(original, length);
+            //selectSort(original, length);
+
+            //插入排序
+            //insertionSort(original,length);
+
+            //希尔排序
+            shellSort(original, length);
 
             //快速排序
             //quickSort(original, length);
@@ -64,6 +70,34 @@ namespace algorithm
             SelectSort.Sort(array);
             sw.Stop();
             Console.WriteLine($"选择排序{length}条数据耗时：{sw.ElapsedMilliseconds}毫秒");
+            WriteArray(array);
+        }
+
+        //插入排序
+        public static void insertionSort(int[] original, int length)
+        {
+            Stopwatch sw = new Stopwatch();
+            int[] array = new int[length];
+            Array.Copy(original, array, length);
+
+            sw.Restart();
+            InsertionSort.Sort(array);
+            sw.Stop();
+            Console.WriteLine($"插入排序{length}条数据耗时：{sw.ElapsedMilliseconds}毫秒");
+            WriteArray(array);
+        }
+
+        //希尔排序
+        public static void shellSort(int[] original, int length)
+        {
+            Stopwatch sw = new Stopwatch();
+            int[] array = new int[length];
+            Array.Copy(original, array, length);
+
+            sw.Restart();
+            ShellSort.Sort(array);
+            sw.Stop();
+            Console.WriteLine($"希尔排序{length}条数据耗时：{sw.ElapsedMilliseconds}毫秒");
             WriteArray(array);
         }
 

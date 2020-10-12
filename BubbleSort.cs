@@ -10,7 +10,7 @@ namespace algorithm
     public class BubbleSort
     {
         /// <summary>
-        /// 冒泡排序，算法的时间复杂度为O(n^2)
+        /// 冒泡排序，算法的时间复杂度为O(n^2)，算法稳定
         /// </summary>
         /// <param name="arr"></param>
         public static void Sort(int[] arr)
@@ -31,7 +31,7 @@ namespace algorithm
         }
 
         /// <summary>
-        /// 冒泡排序优化版1，算法的时间复杂度为O(n^2)
+        /// 冒泡排序优化版1，算法的时间复杂度为O(n^2)，算法稳定
         /// </summary>
         /// <param name="arr"></param>
         public static void SortOptimized1(int[] arr)
@@ -59,7 +59,7 @@ namespace algorithm
         }
 
         /// <summary>
-        /// 冒泡排序优化版2，算法的时间复杂度为O(n^2)
+        /// 冒泡排序优化版2，算法的时间复杂度为O(n^2)，算法稳定
         /// </summary>
         /// <param name="arr"></param>
         public static void SortOptimized2(int[] arr)
