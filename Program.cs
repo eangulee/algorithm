@@ -8,7 +8,7 @@ namespace algorithm
     {
         static void Main(string[] args)
         {
-            int length = 100;
+            int length = 10;
             int[] original = GetRandomArray(length);
             //冒泡排序
             //bubbleSort(original, length);
@@ -20,10 +20,13 @@ namespace algorithm
             //insertionSort(original,length);
 
             //希尔排序
-            shellSort(original, length);
+            //shellSort(original, length);
 
             //快速排序
             //quickSort(original, length);
+
+            //归并排序
+            mergeSort(original, length);
 
             Console.ReadLine();
         }
@@ -114,7 +117,26 @@ namespace algorithm
             Console.WriteLine($"快速排序{length}条数据耗时：{sw.ElapsedMilliseconds}毫秒");
             WriteArray(array);
         }
+        
+        //归并排序
+        public static void mergeSort(int[] original, int length)
+        {
+            Stopwatch sw = new Stopwatch();
+            int[] array = new int[length];
+            Array.Copy(original, array, length);
 
+            sw.Restart();
+            MergeSort.Sort(array);
+            sw.Stop();
+            Console.WriteLine($"归并排序{length}条数据耗时：{sw.ElapsedMilliseconds}毫秒");
+            WriteArray(array);
+        }
+
+        /// <summary>
+        /// 获取随机数组
+        /// </summary>
+        /// <param name="length"></param>
+        /// <returns></returns>
         public static int[] GetRandomArray(int length)
         {
             int[] arr = new int[length];

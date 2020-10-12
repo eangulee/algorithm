@@ -31,6 +31,7 @@ Algorithm with C#
 
 6.归并排序
 
+![image](https://github.com/eangulee/algorithm/blob/main/imgs/merge.gif)
 ![image](https://github.com/eangulee/algorithm/blob/main/imgs/merge.png)
 
 7.堆排序
