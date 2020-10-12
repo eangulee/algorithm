@@ -1,11 +1,11 @@
 ﻿# algorithm
 Algorithm with C#
 
-###算法分类
+### 算法分类
 
 ![image](https://github.com/eangulee/algorithm/blob/main/imgs/category.png)
 
-###算法复杂度
+### 算法复杂度
 
 ![image](https://github.com/eangulee/algorithm/blob/main/imgs/O.png)
 
