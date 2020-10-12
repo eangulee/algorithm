@@ -1,6 +1,15 @@
 ﻿# algorithm
 Algorithm with C#
 
+###算法分类
+
+![image](https://github.com/eangulee/algorithm/blob/main/imgs/category.png)
+
+###算法复杂度
+
+![image](https://github.com/eangulee/algorithm/blob/main/imgs/O.png)
+
+
 1.冒泡排序（两种优化的冒泡排序）
 
 ![image](https://github.com/eangulee/algorithm/blob/main/imgs/bubble.gif)
