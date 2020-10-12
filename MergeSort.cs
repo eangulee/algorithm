@@ -46,6 +46,7 @@ namespace algorithm
             //把较小的数先移到新数组中
             while (i <= mid && j <= high)
             {
+                //从两个数组中取出最小的放入临时数组
                 if (arr[i] < arr[j])
                 {
                     temp[k++] = arr[i++];
