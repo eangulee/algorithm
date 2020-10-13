@@ -1,6 +1,8 @@
 ﻿# algorithm
 Algorithm with C#
 
+[常见的10种排序算法与C#实现](https://www.jianshu.com/p/a5bc98500cec)
+
 ### 算法分类
 
 ![image](https://github.com/eangulee/algorithm/blob/main/imgs/category.png)

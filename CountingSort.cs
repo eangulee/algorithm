@@ -11,6 +11,7 @@ namespace algorithm
     {
         /// <summary>
         /// 计数排序，算法的时间复杂度为O(n+k)，算法稳定
+        /// k为最大值
         /// </summary>
         /// <param name="arr"></param>
         public static void Sort(int[] arr)
