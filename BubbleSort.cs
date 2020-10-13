@@ -55,7 +55,7 @@ namespace algorithm
                 }
                 sum++;
             }
-            Console.WriteLine("大循环次数为:" + sum);
+            //Console.WriteLine("大循环次数为:" + sum);
         }
 
         /// <summary>
@@ -89,7 +89,7 @@ namespace algorithm
                 sortBorder = pos;
                 sum++;
             }
-            Console.WriteLine("大循环次数为:" + sum);
+            //Console.WriteLine("大循环次数为:" + sum);
         }
     }
 }

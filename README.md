@@ -9,6 +9,10 @@ Algorithm with C#
 
 ![image](https://github.com/eangulee/algorithm/blob/main/imgs/O.png)
 
+### 效率比较：50000条随机数排序
+
+![image](https://github.com/eangulee/algorithm/blob/main/imgs/result.png)
+
 1.冒泡排序（两种优化的冒泡排序）
 
 ![image](https://github.com/eangulee/algorithm/blob/main/imgs/bubble.gif)
@@ -37,3 +41,17 @@ Algorithm with C#
 7.堆排序
 
 ![image](https://github.com/eangulee/algorithm/blob/main/imgs/heap.gif)
+
+8.计数排序
+
+![image](https://github.com/eangulee/algorithm/blob/main/imgs/counting.gif)
+
+
+9.桶排序
+
+![image](https://github.com/eangulee/algorithm/blob/main/imgs/bucket.png)
+
+
+10.基数排序
+
+![image](https://github.com/eangulee/algorithm/blob/main/imgs/radix.gif)

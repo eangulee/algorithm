@@ -8,25 +8,37 @@ namespace algorithm
     {
         static void Main(string[] args)
         {
-            int length = 10;
+            int length = 50000;
             int[] original = GetRandomArray(length);
             //冒泡排序
-            //bubbleSort(original, length);
+            bubbleSort(original, length);
 
             //选择排序
-            //selectSort(original, length);
+            selectSort(original, length);
 
             //插入排序
-            //insertionSort(original,length);
+            insertionSort(original, length);
 
             //希尔排序
-            //shellSort(original, length);
+            shellSort(original, length);
 
             //快速排序
-            //quickSort(original, length);
+            quickSort(original, length);
 
             //归并排序
             mergeSort(original, length);
+
+            //堆排序
+            heapSort(original, length);
+
+            //计数排序
+            countingSort(original, length);
+
+            //桶排序
+            bucketSort(original, length);
+
+            //基数排序
+            radixSort(original, length);
 
             Console.ReadLine();
         }
@@ -117,7 +129,7 @@ namespace algorithm
             Console.WriteLine($"快速排序{length}条数据耗时：{sw.ElapsedMilliseconds}毫秒");
             WriteArray(array);
         }
-        
+
         //归并排序
         public static void mergeSort(int[] original, int length)
         {
@@ -129,6 +141,65 @@ namespace algorithm
             MergeSort.Sort(array);
             sw.Stop();
             Console.WriteLine($"归并排序{length}条数据耗时：{sw.ElapsedMilliseconds}毫秒");
+            WriteArray(array);
+        }
+
+
+        //堆排序
+        public static void heapSort(int[] original, int length)
+        {
+            Stopwatch sw = new Stopwatch();
+            int[] array = new int[length];
+            Array.Copy(original, array, length);
+
+            sw.Restart();
+            HeapSort.Sort(array);
+            sw.Stop();
+            Console.WriteLine($"堆排序{length}条数据耗时：{sw.ElapsedMilliseconds}毫秒");
+            WriteArray(array);
+        }
+
+        //计数排序
+        public static void countingSort(int[] original, int length)
+        {
+            Stopwatch sw = new Stopwatch();
+            int[] array = new int[length];
+            Array.Copy(original, array, length);
+
+            sw.Restart();
+            CountingSort.Sort(array);
+            sw.Stop();
+            Console.WriteLine($"计数排序{length}条数据耗时：{sw.ElapsedMilliseconds}毫秒");
+            WriteArray(array);
+        }
+
+
+        //桶排序
+        public static void bucketSort(int[] original, int length)
+        {
+            Stopwatch sw = new Stopwatch();
+            int[] array = new int[length];
+            Array.Copy(original, array, length);
+
+            sw.Restart();
+            BucketSort.Sort(array);
+            sw.Stop();
+            Console.WriteLine($"桶排序{length}条数据耗时：{sw.ElapsedMilliseconds}毫秒");
+            WriteArray(array);
+        }
+
+
+        //基数排序
+        public static void radixSort(int[] original, int length)
+        {
+            Stopwatch sw = new Stopwatch();
+            int[] array = new int[length];
+            Array.Copy(original, array, length);
+
+            sw.Restart();
+            RadixSort.Sort(array);
+            sw.Stop();
+            Console.WriteLine($"基数排序{length}条数据耗时：{sw.ElapsedMilliseconds}毫秒");
             WriteArray(array);
         }
 
@@ -150,6 +221,7 @@ namespace algorithm
 
         public static void WriteArray(int[] arr)
         {
+            return;
             int length = arr.Length > 100 ? 100 : arr.Length;
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < length; i++)
