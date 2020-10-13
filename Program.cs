@@ -8,7 +8,7 @@ namespace algorithm
     {
         static void Main(string[] args)
         {
-            int length = 50000;
+            int length = 100;//随机条数
             int[] original = GetRandomArray(length);
             //冒泡排序
             bubbleSort(original, length);
@@ -221,7 +221,7 @@ namespace algorithm
 
         public static void WriteArray(int[] arr)
         {
-            return;
+            //return;
             int length = arr.Length > 100 ? 100 : arr.Length;
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < length; i++)
