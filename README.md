@@ -11,7 +11,7 @@ Algorithm with C#
 
 ![image](https://github.com/eangulee/algorithm/blob/main/imgs/O.png)
 
-### 效率比较：50000条随机数排序
+### 效率比较：50000条0-1000000随机数排序
 
 ![image](https://github.com/eangulee/algorithm/blob/main/imgs/result.png)
 
