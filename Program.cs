@@ -8,7 +8,7 @@ namespace algorithm
     {
         static void Main(string[] args)
         {
-            int length = 100;//随机条数
+            int length = 50000;//随机条数
             int[] original = GetRandomArray(length);
             //冒泡排序
             bubbleSort(original, length);
@@ -208,13 +208,13 @@ namespace algorithm
         /// </summary>
         /// <param name="length"></param>
         /// <returns></returns>
-        public static int[] GetRandomArray(int length)
+        public static int[] GetRandomArray(int length, int max = 1000000)
         {
             int[] arr = new int[length];
             Random random = new Random();
             for (int i = 0; i < length; i++)
             {
-                arr[i] = random.Next(0, length);
+                arr[i] = random.Next(0, max);
             }
             return arr;
         }
