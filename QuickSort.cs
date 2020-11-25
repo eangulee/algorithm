@@ -39,11 +39,11 @@ namespace algorithm
                     while (l < r && arr[r] >= k)//从右往左查找第一个小于基数k的数，并放到左边
                         r--;
                     if (l < r)
-                        arr[l++] = arr[r];//将arr[r]填到arr[l]中，arr[r]就形成了一个新的坑
+                        arr[l++] = arr[r];//将arr[r]填到arr[l]中，arr[r]就形成了一个新的坑，进行过一次替换后，没必要将替换后的两值再次比较，所以l++直接下一位与k对比
                     while (l < r && arr[l] < k)//从左往右查找第一个大于基数k的数，并放到右边
                         l++;
                     if (l < r)
-                        arr[r--] = arr[l];//将arr[l]填到arr[r]中，arr[l]就形成了一个新的坑
+                        arr[r--] = arr[l];//将arr[l]填到arr[r]中，arr[l]就形成了一个新的坑，进行过一次替换后，没必要将替换后的两值再次比较，所以r--直接上一位与k对比
                 }
                 //退出时，l等于r。将k填到这个坑中。
                 arr[l] = k;
